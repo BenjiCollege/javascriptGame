@@ -38,7 +38,8 @@ window.getPokeData = function _callee() {
       }
     }
   });
-};
+}; //! this function is to get the pokemon from the api out of 151 pokemon, changing the limit of 151 will increase or decrease the number of pokemon
+
 
 var getPokemon = function getPokemon() {
   var res, pokemon;
@@ -64,7 +65,8 @@ var getPokemon = function getPokemon() {
       }
     }
   });
-};
+}; //! this function is to shuffle the array of pokemon using the sort method and Math.random
+
 
 var shuffle = function shuffle(unshuffled) {
   var shuffled = unshuffled.map(function (value) {
@@ -79,11 +81,12 @@ var shuffle = function shuffle(unshuffled) {
     return value;
   });
   return shuffled;
-};
+}; //! this function is to get 4 random pokemon from the array of pokemon
+
 
 var get4Pokemon = function get4Pokemon(randomPokemon) {
-  return randomPokemon.slice(0, 1);
-}; // this function is to get the number from the url and use it to get the image in the next function, works by capturing the number at the end of the url and returning it by using Regular Expressions
+  return randomPokemon.splice(0, 4);
+}; //! this function is to get the number from the url and use it to get the image in the next function, works by capturing the number at the end of the url and returning it by using Regular Expressions
 
 
 var getNumber = function getNumber(url) {
@@ -95,4 +98,20 @@ var getPokemonImage = function getPokemonImage(_ref2) {
   var url = _ref2.url;
   var number = getNumber(url);
   return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/".concat(number, ".png");
-};
+}; //! This needs to be used for a hint function when the user gets the answer wrong
+// const getPokemonType = (url) => {
+//   const type = getType(url);
+//   return `https://pokeapi.co/api/v2/type/{id or name}/`;
+// }
+// const getPokemonHeight = (url) => {
+//   const height = getHeight(url);
+//   return `https://pokeapi.co/api/v2/height/{id or name}/`;
+// }
+// const getPokemonWeight = (url) => {
+//   const weight = getWeight(url);
+//   return `https://pokeapi.co/api/v2/weight/{id or name}/`;
+// }
+// const getPokemonAbility = (url) => {
+//   const ability = getAbility(url);
+//   return `https://pokeapi.co/api/v2/ability/{id or name}/`;
+// }

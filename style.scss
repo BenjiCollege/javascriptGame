@@ -22,7 +22,7 @@ header {
   font-family: 'Press Start 2P', cursive;
   color: #fdcc05;
 }
-
+//! background image of pokemon logo
 main {
   position: relative;
   width: 575px;
@@ -125,6 +125,7 @@ button.incorrect {
   flex-direction: column;
 }
 
+//! changing the value of filter brightness(value) makes the image disappear or appear
 #pokemon-image {
   margin: 135px 0 0 140px;
   transform: scale(2.5);
@@ -156,15 +157,9 @@ main.revealed #answer {
 }
 
 #choices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
 }
 
 @keyframes wiggle {
