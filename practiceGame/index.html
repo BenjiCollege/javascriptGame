@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" async defer></script>
+</head>
+<header>Guess the Pokemon!</header>
+<body>
+  <div>
+    <main class="fetching">
+      <section class="background-image">
+        <div id="pokemon-container">
+          <img id="pokeball" src="background.jpg">
+          <img id="pokemon-image" src="placeholder.png">
+        </div>
+      </section>
+    
+      <div id="answer">
+        <div id="bg-overlay"></div>
+        <div id="text-overlay"></div>
+      </div>
+    
+      <section id="controls">
+        <button id="play">NEW GAME</button>
+        <div id="choices"></div>
+      </section>
+    </main>
+    <div class="grid-container">
+      <div class="letters">
+        <section class="hidden-letters"></section>
+      </div>
+      <div class="keyboard">
+        <div class="wordle-keys1">
+          <button class="wordle-key">Q</button>
+          <button class="wordle-key">W</button>
+          <button class="wordle-key">E</button>
+          <button class="wordle-key">R</button>
+          <button class="wordle-key">T</button>
+          <button class="wordle-key">Y</button>
+          <button class="wordle-key">U</button>
+          <button class="wordle-key">I</button>
+          <button class="wordle-key">O</button>
+          <button class="wordle-key">P</button>
+        </div>
+        <div class="wordle-keys2">
+          <button class="wordle-key">A</button>
+          <button class="wordle-key">S</button>
+          <button class="wordle-key">D</button>
+          <button class="wordle-key">F</button>
+          <button class="wordle-key">G</button>
+          <button class="wordle-key">H</button>
+          <button class="wordle-key">J</button>
+          <button class="wordle-key">K</button>
+          <button class="wordle-key">L</button>
+        </div>
+        <div class="wordle-keys3" >
+          <button class="wordle-key">Z</button>
+          <button class="wordle-key">X</button>
+          <button class="wordle-key">C</button>
+          <button class="wordle-key">V</button>
+          <button class="wordle-key">B</button>
+          <button class="wordle-key">N</button>
+          <button class="wordle-key">M</button>
+      </div>
+      <div class="wordle-keys4">
+        <button class="wordle-key">SUBMIT</button>
+        <button class="wordle-key">DELETE</button>
+      </div>
+        <button class="button wordle-key pokemon-hint">HINT</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
